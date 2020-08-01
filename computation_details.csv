@@ -4,3 +4,5 @@ origin_x,origin_y,origin_coordinates,longest_point_value,longest_point_index,lon
 0,0,"(0, 0)",10005.0,0,5,-100,"(5, -100)",200,200
 origin_x,origin_y,origin_coordinates,longest_point_value,longest_point_index,longest_point_x_coordinate,longest_point_y_coordinate,longest_point_coordinates,number_of_possible_paths,number_of_possible_paths_coordinates
 0,0,"(0, 0)",10045.0,0,45,-100,"(45, -100)",200,200
+origin_x,origin_y,origin_coordinates,longest_point_value,longest_point_index,longest_point_x_coordinate,longest_point_y_coordinate,longest_point_coordinates,number_of_possible_paths,number_of_possible_paths_coordinates
+0,0,"(0, 0)",10038.0,0,38,-100,"(38, -100)",200,200
