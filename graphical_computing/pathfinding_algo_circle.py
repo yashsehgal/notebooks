@@ -82,13 +82,18 @@ def compute_longest_magnitude_point(points, duration, length):
     }]
     
     plt.scatter(points, duration, color="yellow")
-    plt.savefig('scatter-plot.png')
+    try:
+        plt.savefig('/graphical_computing/scatter-plot.png')
+    except FileNotFoundError:
+        plt.savefig('./scatter-plot.png')
     figure, axes = plt.subplots()
     axes.set(xlim = (-length**2.3, length**2.3), ylim = (-length**2.3, length**2.3))
     circle_plot = plt.Circle((origin_x, origin_y), longest_point)
     axes.add_artist(circle_plot)
-    figure.savefig('plot-circle.png')
-    
+    try:
+        figure.savefig('/graphical_computing/plot-circle.png')
+    except FileNotFoundError:
+        figure.savefig('./plot-circle.png')
     
     # writing data in a csv file 
     csv_file_name = "computation_details.csv"
