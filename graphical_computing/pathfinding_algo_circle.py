@@ -82,6 +82,7 @@ def compute_longest_magnitude_point(points, duration, length):
     }]
     
     plt.scatter(points, duration, color="yellow")
+    # plt.show()          # showing the computational data
     try:
         plt.savefig('/graphical_computing/scatter-plot.png')
     except FileNotFoundError:
@@ -118,4 +119,5 @@ def compute_longest_magnitude_point(points, duration, length):
         print(message)
 
 if __name__ == '__main__':
-  generate_points()
+    for count in range(10):
+        generate_points()
