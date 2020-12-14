@@ -2,7 +2,7 @@ from matplotlib import pyplot as plt
 import numpy as np
 import math as math
 
-from numpy.core.defchararray import index
+# from numpy.core.defchararray import index
 
 
 def computeDistance(x, y):
@@ -44,7 +44,7 @@ class Points:
     self.ratios = []
     for count in range(len(self.points)):
       self.ratios.append(getMinMaxRatio(self.distances[count], self.maxPoint))
-    
+      
     self.plotRatioStatus()
 
   def plotGraph(self):
