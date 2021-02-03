@@ -106,6 +106,9 @@ def compute_longest_magnitude_point(points, duration, length):
             for data_writer in computation_details:
                 writer.writerow(data_writer)
             print("data successfully saved for this computation!")
+            print(">>> BASE-COORDINATES: {}\nLONGEST-POINT-COORDINATE{}\nNUMBER-OF-POSSIBLE-PATHS{}\nLONGEST-POINT-COORDINATES{}".format(
+                origin, longest_point_coordinate, len(possible_paths), longest_point_coordinates
+            ))
     except IOError:
         message = (
             "Something went wrong while inserting the data into CSV \n CSVWritingError"
@@ -117,7 +120,13 @@ def compute_longest_magnitude_point(points, duration, length):
             "{}: file not found".format(csv_file_name)
         )
         print(message)
+        print(message_desc)
+        print(message_file_error)
 
 if __name__ == '__main__':
-    for count in range(10):
-        generate_points()
+    size = int(input("> "))
+    try:
+        for count in range(size):
+            generate_points()
+    except RuntimeWarning:
+        print(">>> Data Computation Exceeded!")
