@@ -1,6 +1,6 @@
-from graphical_computing import pathfinding_algo_circle as pathfinding_circle
+import api as StyleSheet
 
-description = (
-  "This codebase contains all the mathematical computations and graphical computation,",
-  "- Graphical Computing", "- Machine Learning", "- Mathematical Computing"
-)
+HeaderMetaData = StyleSheet.EccentricTouch(classname=None, component_id="header-01")
+
+
+HeaderMetaData.get(query=None, filename="headers.css > styles/header.min.css")
